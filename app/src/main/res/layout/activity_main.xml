@@ -8,6 +8,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="tw.com.abc.myfileio.MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,5 +48,26 @@
         android:textSize="24sp"
         android:text="Test 5"
         android:onClick="test5"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Test 6"
+        android:onClick="test6"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Test 7"
+        android:onClick="test7"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Test 8"
+        android:onClick="test8"
         />
 </LinearLayout>
