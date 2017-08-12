@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         tv = (TextView)findViewById(R.id.tv);
         sp=getSharedPreferences("mydata",MODE_PRIVATE);
+
         editor=sp.edit();
     }
 
@@ -52,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
                 "Temp: " + temp);
     }
     public void test3(View view){
+        Log.i("brad","test3");
+
         try (FileOutputStream fout= openFileOutput("brad.txt",MODE_PRIVATE)){
             fout.write("電腦A公B會C\n".getBytes());
             fout.write("Brid2\n".getBytes());
@@ -61,6 +64,15 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        //沒有效果
+/*
+        try {
+            FileOutputStream fout = openFileOutput("brad.txt",MODE_PRIVATE);
+        } catch (Exception e) {
+            Log.i("brad",e.toString());
+            //e.printStackTrace();
+        }
+*/
     }
     public void test4(View view){
         try {

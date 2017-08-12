@@ -1,6 +1,8 @@
 package tw.com.abc.myfileio;
 
-public class student {
+import java.io.Serializable;
+
+public class student implements Serializable{
     int ch, math, eng;
 
     public student(int ch, int math, int eng) {
